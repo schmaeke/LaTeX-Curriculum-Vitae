@@ -217,5 +217,4 @@
 	\pagestyle{fancy}
 	\sloppy
 	\linespread{1.1}
-	% \setlength{\baselineskip}{0mm}
 	\setlength{\parskip}{0mm}
