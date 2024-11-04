@@ -51,7 +51,6 @@
 	\definecolor{highlightedForeground}{RGB}{50, 105, 175}
 
 	\definecolor{background}{RGB}{255, 255, 255}
-	% \definecolor{highlightedBackground}{RGB}{185, 200, 215}
 	\definecolor{highlightedBackground}{RGB}{220, 230, 235}
 
 
@@ -194,8 +193,6 @@
 	\newcommand{\cvdatedentry}[3]{
 		\cvcustomentry{#1}{#2\ \faCalendar*[regular]}{#3}
 	}
-
-	\newcommand{\connect}{\vspace*{-1mm}}
 
 	% Seperator
 	\newcommand{\sep}{$\ \cdot\ $}
