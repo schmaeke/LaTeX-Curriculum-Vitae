@@ -175,15 +175,14 @@
 			\node[below right, inner sep = 0mm] (A) at (0, 0) {
 				\hspace*{3mm}
 				\begin{minipage}{18.0cm}
-					{\sffamily\color{highlightedForeground}\textbf{#1} \hfill #2} \\
+					{\sffamily\color{highlightedForeground}\strut\textbf{#1} \hfill #2} \\
 					#3
 				\end{minipage}
 			};
 
 			\draw[background] (A.north west) -- ++(-5mm, 0);
-			\draw[highlightedForeground, line width = 0.5mm] (A.south west) -- (A.north west) -- ++(0, 4mm);
-			\fill[highlightedForeground] (A.north west) ++(0, -2mm) circle (1.25mm);
-			\fill[background] (A.north west) ++(0, -2mm) circle (0.75mm);
+			\draw[highlightedForeground, line width = 0.5mm] (A.south west) -- (A.north west) -- ++(0, 3mm);
+			\draw[highlightedForeground, fill = background, line width = 0.5mm] (A.north west) ++(0, -2.5mm) circle (1.0mm);
 		\end{tikzpicture}
 	}
 
