@@ -136,13 +136,13 @@
 	\newcommand{\cvhead}{
 		{
 			\sffamily\color{highlightedForeground}
-			{\fontsize{18pt}{0pt}\selectfont\prenameValue}%
-			{\fontsize{28pt}{0pt}\selectfont\bfseries\nameValue\ \surnameValue}%
-			{\fontsize{18pt}{0pt}\selectfont\postnameValue}%
+			{\fontsize{24pt}{0pt}\selectfont\prenameValue}%
+			{\fontsize{34pt}{0pt}\selectfont\bfseries\nameValue\ \surnameValue}%
+			{\fontsize{24pt}{0pt}\selectfont\postnameValue}%
 			\vspace*{5mm}
 		}
 
-		\cvsection{\faUser}{Personal Information \& Contact}
+		\cvsection{\faUser}{Personal Information \& Contact}\\[0mm]
 		\begin{center}
 			\begin{tabular}{l c l c l}
 				\highlighted{\faMapMarker*}\ \residenceValue
@@ -157,6 +157,7 @@
 				& \highlighted{\faGithub}\ \githubValue \\
 			\end{tabular}
 		\end{center}
+		\vspace*{5mm}
 	}
 
 	\newcommand{\cvsection}[2]{
@@ -170,8 +171,8 @@
 
 	% Content
 	\newcommand{\cvcustomentry}[3]{
-		\vspace*{-1mm}
-		\begin{tikzpicture}
+		\vspace{-1mm}%
+		\begin{tikzpicture}%
 			\node[below right, inner sep = 0mm] (A) at (0, 0) {
 				\hspace*{3mm}
 				\begin{minipage}{18.0cm}
@@ -183,7 +184,7 @@
 			\draw[background] (A.north west) -- ++(-5mm, 0);
 			\draw[highlightedForeground, line width = 0.5mm] (A.south west) -- (A.north west) -- ++(0, 3mm);
 			\draw[highlightedForeground, fill = background, line width = 0.5mm] (A.north west) ++(0, -2.5mm) circle (1.0mm);
-		\end{tikzpicture}
+		\end{tikzpicture}%
 	}
 
 	\newcommand{\cventry}[2]{
@@ -193,6 +194,8 @@
 	\newcommand{\cvdatedentry}[3]{
 		\cvcustomentry{#1}{#2\ \faCalendar*[regular]}{#3}
 	}
+
+	\newcommand{\connect}{\vspace*{-1mm}}
 
 	% Seperator
 	\newcommand{\sep}{$\ \cdot\ $}
@@ -214,3 +217,5 @@
 	\pagestyle{fancy}
 	\sloppy
 	\linespread{1.1}
+	% \setlength{\baselineskip}{0mm}
+	\setlength{\parskip}{0mm}
