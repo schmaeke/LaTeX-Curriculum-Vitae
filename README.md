@@ -41,7 +41,7 @@ Ensure you have a LaTeX distribution installed, such as ![TeX Live](https://www.
 
 1. Clone the repository:
 ```sh
-git clone https://github.com/yourusername/latex-cv-template.git
+git clone https://github.com/schmaeke/latex-cv-template.git
 cd latex-cv-template
 ```
 You can use `example.tex` file as a basis for your CV.
