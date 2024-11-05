@@ -36,7 +36,7 @@
 	\RequirePackage{tikz}
 
 	% Links
-	\RequirePackage{hyperref}
+	\RequirePackage[hidelinks, colorlinks = false]{hyperref}
 
 	% Misc.
 	\RequirePackage{lastpage}
@@ -65,14 +65,6 @@
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Links
-	\hypersetup{
-		colorlinks = true,
-		allcolors = highlightedBackground,
-	}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Footer & Header
 
 	\renewcommand{\headrulewidth}{0.0mm}
@@ -96,7 +88,7 @@
 					\sffamily\small
 					\faEnvelope\enspace\href{mailto:\mailValue}{\mailValue}
 					\enspace\enspace
-					\faPhoneSquare\enspace\phoneValue
+					\faPhoneSquare\enspace\href{tel:\phoneValue}{\phoneValue}
 					\enspace\enspace
 					\faGlobe\enspace\href{https://\webValue}{\webValue}
 					\enspace\enspace
@@ -146,14 +138,14 @@
 			\begin{tabular}{l c l c l}
 				\highlighted{\faMapMarker*}\ \residenceValue
 				& \hspace{2cm}
-				& \highlighted{\faPhoneSquare}\ \phoneValue
+				& \highlighted{\faPhoneSquare}\ \href{tel:\phoneValue}{\phoneValue}
 				& \hspace{2cm}
-				& \highlighted{\faGlobe}\ \webValue \\[2mm]
+				& \highlighted{\faGlobe}\ \href{https://\webValue}{\webValue} \\[2mm]
 				\highlighted{\faIdCard}\ \nationalityValue
 				&
-				& \highlighted{\faEnvelope}\ \mailValue
+				& \highlighted{\faEnvelope}\ \href{mailto:\mailValue}{\mailValue}
 				&
-				& \highlighted{\faGithub}\ \githubValue \\
+				& \highlighted{\faGithub}\ \href{https://github.com/\githubValue}{\githubValue} \\
 			\end{tabular}
 		\end{center}
 		\vspace*{5mm}
