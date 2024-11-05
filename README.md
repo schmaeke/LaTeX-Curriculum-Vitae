@@ -1,6 +1,6 @@
 # L<sup>A</sup>T<sub>E</sub>X CV Template
 
-This is a customizable LaTeX template for creating a professional, single/multipage CV or résumé. This template emphasizes clarity, organization, and easy customization, and is ideal for academic, technical, or industry positions. It provides the curriculumvitae document class, which offers several commands for structured, visually appealing CV formatting.
+This is a customizable LaTeX template for creating a professional, single/multipage CV or résumé. This template emphasizes clarity, organization, and easy customization, and is ideal for academic, technical, or industry positions. It provides the `curriculumvitae` document class, which offers several commands for structured, visually appealing CV formatting.
 
 <p align = "center">
     <img src = "screenshots/1.png" alt = "First page" width = "40%"/> <img src = "screenshots/2.png" alt = "Second page" width = "40%"/>
@@ -44,7 +44,7 @@ Ensure you have a LaTeX distribution installed, such as [TeX Live](https://www.t
 git clone https://github.com/schmaeke/latex-curriculum-vitae.git
 cd latex-curruiculum-vitae
 ```
-You can use `example.tex` file as a basis for your CV.
+You can use the `example.tex` file as a basis for your CV.
 
 2. Edit your personal information in the main .tex file
 ```latex
@@ -95,7 +95,7 @@ This template uses [Font Awesome 5](https://ctan.org/pkg/fontawesome5?lang=en) i
 - `\faTools` for Skills
 
 
-### Colors and Formatting
+### Colors
 
 The template uses four different colors for fore- and background. If you don't like the default ones overwrite
 - `background` default is `RGB(255, 255, 255)`
