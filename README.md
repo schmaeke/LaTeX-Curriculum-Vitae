@@ -17,7 +17,7 @@ This is a customizable LaTeX template for creating a professional, single/multip
 
 ## Prerequisites
 
-Ensure you have a LaTeX distribution installed, such as ![TeX Live](https://www.tug.org/texlive/) or ![MiKTeX](https://miktex.org/), and that your editor supports compiling with additional LaTeX packages. This template uses:
+Ensure you have a LaTeX distribution installed, such as [TeX Live](https://www.tug.org/texlive/) or [MiKTeX](https://miktex.org/), and that your editor supports compiling with additional LaTeX packages. This template uses:
 
 - `geometry`
 - `paratype`
@@ -41,8 +41,8 @@ Ensure you have a LaTeX distribution installed, such as ![TeX Live](https://www.
 
 1. Clone the repository:
 ```sh
-git clone https://github.com/schmaeke/latex-cv-template.git
-cd latex-cv-template
+git clone https://github.com/schmaeke/latex-curriculum-vitae.git
+cd latex-curruiculum-vitae
 ```
 You can use `example.tex` file as a basis for your CV.
 
@@ -88,7 +88,7 @@ Basic Structure
 
 ### Icons
 
-This template uses ![Font Awesome 5](https://ctan.org/pkg/fontawesome5?lang=en) icons for a modern look. Some examples include:
+This template uses [Font Awesome 5](https://ctan.org/pkg/fontawesome5?lang=en) icons for a modern look. Some examples include:
 
 - `\faGraduationCap` for Education
 - `\faStore*` for Professional Experience
