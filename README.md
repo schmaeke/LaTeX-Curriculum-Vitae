@@ -101,7 +101,7 @@ The template uses four different colors for fore- and background. If you don't l
 - `background` default is `RGB(255, 255, 255)`
 - `highlightedBackground` default is `RGB(220, 230, 235)`
 - `foreground` default is `RGB(0, 0, 0)`
-- `highlightedBackground` default is `RGB(50, 105, 175)`
+- `highlightedForeground` default is `RGB(50, 105, 175)`
 
 
 ## License
