@@ -47,11 +47,11 @@
 % Colors
 
 	% Default palette
-	\definecolor{foreground}{RGB}{0, 0, 0}
-	\definecolor{highlightedForeground}{RGB}{50, 105, 175}
+	\definecolor{foreground}{HTML}{000000}
+	\definecolor{highlightedForeground}{HTML}{003DA0}
 
-	\definecolor{background}{RGB}{255, 255, 255}
-	\definecolor{highlightedBackground}{RGB}{220, 230, 235}
+	\definecolor{background}{HTML}{FFFFFF}
+	\definecolor{highlightedBackground}{HTML}{ECF1F9}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -180,6 +180,10 @@
 
 	\newcommand{\cventry}[2]{
 		\cvcustomentry{#1}{}{#2}
+	}
+
+	\newcommand{\cvlinkedentry}[4]{
+		\cvcustomentry{#1}{\href{#2}{#3}\ \faExternalLink*}{#4}
 	}
 
 	\newcommand{\cvdatedentry}[3]{
