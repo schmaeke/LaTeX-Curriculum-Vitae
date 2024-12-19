@@ -81,9 +81,9 @@
 	\fancyfoot[C]{
 		\begin{tikzpicture}[remember picture, overlay]
 			\fill[highlightedForeground] (current page.south west) rectangle ++(\paperwidth, 1cm);
-			\draw[highlightedBackground, line width = 0.5mm] (current page.south west) ++(0cm, 1cm) -- ++(\paperwidth, 0cm);
+			\draw[highlightedBackground, line width = 0.5mm, densely dashed] (current page.south west) ++(0cm, 0.9cm) -- ++(\paperwidth, 0cm);
 
-			\node[right, highlightedBackground, shift = {(0.2cm, 0.475cm)}] at (current page.south west)
+			\node[right, highlightedBackground, shift = {(0.2cm, 0.44cm)}] at (current page.south west)
 				{
 					\sffamily\small
 					\faEnvelope\enspace\href{mailto:\mailValue}{\mailValue}
@@ -95,7 +95,7 @@
 					\faGithub\enspace\href{https://github.com/\githubValue}{\githubValue}
 				};
 
-			\node[left, highlightedBackground, shift = {(-0.2cm, 0.475cm)}] at (current page.south east)
+			\node[left, highlightedBackground, shift = {(-0.2cm, 0.44cm)}] at (current page.south east)
 				{
 					\sffamily\small
 					Page \textbf{\thepage} of \textbf{\pageref*{LastPage}}
